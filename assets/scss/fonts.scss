@@ -1,0 +1,41 @@
+@font-face {
+	font-family: Arvo;
+	src: url("../fonts/Arvo/Arvo-Bold.ttf");
+	src: url("../fonts/Arvo/Arvo-BoldItalic.ttf");
+	src: url("../fonts/Arvo/Arvo-Italic.ttf");
+	src: url("../fonts/Arvo/Arvo-Regular.ttf");
+	src: url("../fonts/Arvo/Arvo-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url('./../fonts/Lato/Lato-Bold.ttf');
+	src: url('./../fonts/Lato/Lato-BoldItalic.ttf');
+	src: url('./../fonts/Lato/Lato-Black.ttf');
+	src: url('./../fonts/Lato/Lato-BlackItalic.ttf');
+	src: url('./../fonts/Lato/Lato-Italic.ttf');
+	src: url('./../fonts/Lato/Lato-Light.ttf');
+	src: url('./../fonts/Lato/Lato-LightItalic.ttf');
+	src:url('./../fonts/Lato/Lato-Regular.ttf');
+	src:url('./../fonts/Lato/Lato-Thin.ttf');
+	src:url('./../fonts/Lato/Lato-ThinItalic.ttf');
+}
+
+html {
+	font-size: 10px;
+	h1 {
+		font-size: 4.8rem;
+		line-height: 5.9rem;
+		font-family: Arvo;
+	}
+
+	body {
+		font-family: 'Lato';
+		font-style: normal;
+	}
+
+	p, a {
+		font-size: 1.6rem;
+	}
+}
+

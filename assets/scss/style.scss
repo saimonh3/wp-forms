@@ -1,0 +1,12 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+
+.wp-forms {
+	background-color: $background_color;
+
+	.wp-forms__container {
+		margin: 0 auto;
+		width: 960px;
+	}
+}
