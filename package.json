@@ -1,0 +1,28 @@
+{
+  "name": "wpforms",
+  "version": "1.0.0",
+  "description": "landing page for wpforms",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimonh3/wp-forms.git"
+  },
+  "author": "saimonh3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saimonh3/wp-forms/issues"
+  },
+  "homepage": "https://github.com/saimonh3/wp-forms#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  }
+}

@@ -1,0 +1,263 @@
+@import "mixins";
+@import "colors";
+
+// Tablet screens
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.wp-forms {
+		.btn {
+			width: 270px;
+		}
+		.wp-forms__hero-section {
+			.wp-forms__container {
+				max-width: 580px;
+			}
+		}
+		.wp-forms__container {
+			max-width: 700px;
+		}
+
+		.wp-forms__video {
+			.wp-forms__video-image {
+				width: 700px;
+			}
+		}
+
+		.wp-forms__top-features {
+			.wp-forms__top-features-item[class] {
+				padding: 3rem;
+				border: 0;
+				flex-basis: 46% ;
+				justify-content: center;
+
+				&:nth-child(even) {
+					border-left: 1px solid $border-gray;
+				}
+
+				&:nth-child(-n+4) {
+					border-bottom: 1px solid $border-gray;
+				}
+
+				&:nth-child(n+3) {
+					padding-top: 3rem;
+				}
+
+				p {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		.wp-forms__testimonials {
+			.wp-forms__testimonial-item {
+				flex-basis: 32%;
+			}
+		}
+
+		.wp-forms__screenshot {
+			.wp-forms__screenshot-item {
+				flex-basis: 47%;
+				width: 47%;
+			}
+		}
+
+		.wp-forms__secondary-features {
+			.wp-forms__features {
+				justify-content: center;
+			}
+			.wp-forms__feature-item[class] {
+				flex-basis: 33.33%;
+				padding: 0 1.5rem;
+			}
+		}
+	}
+}
+
+// Mobile screens
+@media all and (min-width: 300px) and (max-width: 767px) {
+	html {
+		h1 {
+			font-size: 3rem;
+			line-height: 4.9rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+			line-height: 2.6rem;
+		}
+	}
+
+	.wp-forms {
+		.btn {
+			width: 140px;
+			font-size: 1.5rem;
+			padding: 1rem 0;
+			font-weight: 400;
+		}
+
+		.wp-forms__hero-section {
+			height: 450px;
+
+			h1 {
+				margin-top: 3rem;
+			}
+
+			p {
+				font-size: 1.4rem;
+			}
+
+			.wp-forms__container {
+				max-width: 320px;
+			}
+
+			.wp-forms__call-to-actions {
+				justify-content: space-around;
+			}
+		}
+
+		.wp-forms__container {
+			max-width: 320px;
+		}
+
+		.wp-forms__video {
+			padding: 28rem 0 0 0;
+			.wp-forms__video-image {
+				width: 100%;
+			}
+
+			.wp-forms__play-btn {
+				width: 42px;
+			}
+		}
+
+		.wp-forms__top-features[class] {
+			.wp-forms__top-features-item[class] {
+				padding: 0 0 4rem 0;
+				border: 0;
+				flex-basis: 100%;
+
+				img {
+					margin-bottom: 2rem;
+				}
+
+				h3, p {
+					padding-bottom: 1.6rem;
+				}
+			}
+		}
+
+		.wp-forms__testimonial {
+			.wp-forms__call-to-actions {
+				justify-content: space-around;
+			}
+		}
+
+		.wp-forms__testimonials {
+			.wp-forms__testimonial-item {
+				flex-basis: 100%;
+
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+
+		.wp-forms__secondary-features[class] {
+			h2 {
+				font-size: 2rem;
+			}
+			.wp-forms__feature-item {
+				flex-basis: 100%;
+				border: 0;
+				padding: 0 0 4rem 0;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+				img {
+					padding-bottom: 2rem;
+				}
+				h2 {
+					padding-bottom: 1.6rem;
+				}
+			}
+
+			.wp-forms__features-footer {
+				h2 {
+					font-size: 2rem;
+					margin-bottom: 1.5rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+
+		.wp-forms__screenshot {
+			.wp-forms__screenshot-item {
+				flex-basis: 100%;
+				width: 100%;
+
+				h2 {
+					font-size: 2.2rem;
+				}
+
+				&:first-child {
+					margin-bottom: 5rem;
+				}
+			}
+		}
+	}
+}
+
+@media all and (min-width: 300px) and (max-width: 320px) {
+
+	.wp-forms {
+		.btn {
+			width: 130px;
+			font-size: 1.3rem;
+			padding: 1rem 0;
+			font-weight: 400;
+		}
+		.wp-forms__container {
+			max-width: 270px;
+		}
+
+		.wp-forms__hero-section {
+			.wp-forms__call-to-actions {
+				justify-content: space-around;
+			}
+		}
+
+		.wp-forms__play-btn {
+			width: 42px;
+		}
+
+		.wp-forms__secondary-features {
+			h2 {
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+		}
+
+		.wp-forms__screenshot {
+			.wp-forms__screenshot-item {
+				h2 {
+					font-size: 2rem;
+					line-height: 3rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+
+		.wp-forms__features-footer {
+			p {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
